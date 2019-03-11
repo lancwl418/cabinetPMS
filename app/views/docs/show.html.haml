@@ -1,6 +1,9 @@
-%h1= @doc.title
-%p=@doc.content
+.wrapper_width_padding
+#doc_show
+  %h1.title= @doc.title
+  %p= @doc.content
 
-= link_to "All Docs", docs_path
-= link_to "Fix Docs", edit_doc_path(@doc)
-= link_to "Trash It", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }
+.buttons
+  = link_to "All Houses", docs_path
+  = link_to "Edit House", edit_doc_path(@doc)
+  = link_to "Delete It", doc_path(@doc), method: :delete, data: { confirm: "Are you sure?" }

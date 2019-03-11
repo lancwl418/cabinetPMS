@@ -18,6 +18,8 @@ nav{
 
 nav a{
 	color:#5cb2cf;
+	padding: 10px;
+    border: 1px solid;
 }
 
 .header_inner{
@@ -25,4 +27,20 @@ nav a{
     border-bottom: solid 1px #8db0bc;
     padding-bottom: 18px;
     padding-top: 10px;
+}
+
+.buttons a{
+	padding: 10px;
+    border: solid 1px #5cb2cf;
+    color:#5cb2cf;
+}
+
+.account-form{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.account-form input{
+	width:100%;
 }

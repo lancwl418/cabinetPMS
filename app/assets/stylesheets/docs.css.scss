@@ -2,7 +2,81 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
-h1{
-	color:red;
+
+
+a{
+	text-decoration: none;
 }
 
+.doc{
+	text-align: center;
+	background: #5cb2cf;
+    border-radius: 130px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+}
+
+.doc p{
+	margin:0;
+}
+.doc p.title{
+	font-size: 50px;
+	color:white;
+}
+
+.doc p.content{
+	font-size: 30px;
+	color:white;
+}
+
+.doc p.date{
+	color:grey;
+}
+
+#doc_show{
+	text-align: center;
+}
+
+h1.title{
+	color:#5cb2cf;
+	font-size:50px;
+}
+
+.buttons{
+	text-align: center;
+}
+
+
+#doc_edit{
+	text-align: center;
+}
+
+#doc_new{
+	text-align:center;
+}
+
+input#doc_title{
+	width:100%;
+}
+
+textarea#doc_content{
+	width:100%;
+}
+
+form#new_doc{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.edit_doc{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#doc_new h1{
+	color:#5cb2cf;
+}
