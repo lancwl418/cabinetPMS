@@ -1,0 +1,28 @@
+#logo {
+	background-image: url(image_path("logo.png"));
+	background-size:contain;
+	background-repeat: no-repeat;
+	background-position: top center;
+	width:100%;
+	font-size: 100px;
+	color:transparent;
+}
+
+
+nav{
+	display: inline-block;
+    float: right;
+    margin: 28px;
+    font-size: 30px;
+}
+
+nav a{
+	color:#5cb2cf;
+}
+
+.header_inner{
+	background: white;
+    border-bottom: solid 1px #8db0bc;
+    padding-bottom: 18px;
+    padding-top: 10px;
+}
