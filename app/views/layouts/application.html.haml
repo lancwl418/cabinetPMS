@@ -13,6 +13,8 @@
     %nav
       - if user_signed_in?
         = link_to "Create House", new_doc_path
+        = link_to "Create Guest", new_guest_path
+        = link_to "Create Booking", new_booking_path
         = link_to "Sign Out", destroy_user_session_path, method: :delete
 
       - else 

@@ -1,0 +1,22 @@
+.wrapper_width_padding
+#booking_new
+  %h1 All the houses in your doc
+  - @docs.each do |doc|
+    %a{ href: (url_for [doc])}
+      .doc
+        %p.id= doc.id
+        %p.title= doc.title
+
+  %hr
+  %h1 All the guests in your doc
+  - @guests.each do |guest|
+    %a{ href: (url_for [guest])}
+      .guest
+        %p.id= guest.id
+        %p.title= guest.name
+
+
+%h1 Edit Booking
+
+= render 'form'
+= link_to 'Cancel', booking_path, :id => "cancel"

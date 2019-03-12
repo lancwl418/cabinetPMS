@@ -1,0 +1,27 @@
+.wrapper_width_padding
+#booking_new
+  %h1 All the Houses you in your doc
+  - unless @docs.blank?
+    - @docs.each do |doc|
+      %a{ href: (url_for [doc])}
+        .doc
+          %p.id= doc.id
+          %p.title= doc.title
+  - else
+    %h2 Create a new house! 
+    %button= link_to "Create House", new_doc_path
+  %hr
+  %h1 All the guests in your doc
+
+  - unless @guests.blank?
+    - @guests.each do |guest|
+      %a{ href: (url_for [guest])}
+        .guest
+          %p.id= guest.id
+          %p.title= guest.name
+  - else
+    %h2 Create a new guest! 
+    %button= link_to "Create guest", new_guest_path
+
+%p.note ***Please enter the house(Doc) ID and Guest ID you want to assign.
+= render 'form'

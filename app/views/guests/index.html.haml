@@ -1,0 +1,17 @@
+.wrapper_width_padding
+#guests.clearfix
+	- unless @guests.blank?
+		- @guests.each do |guest|
+			%a{ href: (url_for [guest])}
+				.guest
+					%p.title= guest.name
+					%p.gender= guest.gender
+					%p.note= guest.note
+	- else
+		%h2 Create a new guest! 
+		%p Start Creating guest
+		%button= link_to "Create guest", new_guest_path	
+
+
+.bottom-button
+	= link_to "GO to House Panel", docs_path

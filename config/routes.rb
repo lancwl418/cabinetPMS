@@ -5,9 +5,13 @@ Rails.application.routes.draw do
 
   resources :docs
   authenticated :user do
-  	root "docs#index", as: "authenticated_root"
+  	root "welcome#hello", as: "authenticated_root"
   end
 
   root 'welcome#index'
+
+  resources :guests
+
+  resources :bookings
 
 end

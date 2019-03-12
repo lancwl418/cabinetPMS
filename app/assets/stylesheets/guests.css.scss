@@ -1,0 +1,80 @@
+// Place all the styles related to the Guests controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+
+.guest{
+	text-align: center;
+	background: #5cb2cf;
+    border-radius: 130px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:15px;
+}
+
+#guests{
+	text-align: center;
+}
+.guest p{
+	margin:0;
+}
+
+.guest p.title{
+	font-size: 50px;
+	color:white;
+}
+
+.guest p.gender{
+	font-size: 30px;
+	color:white;
+}
+
+.guest p.note{
+	font-size: 30px;
+	color:white;
+}
+
+#guest_edit{
+	text-align: center;
+}
+
+form.edit_guest{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input#guest_name{
+	width:100%;
+}
+
+input#guest_gender{
+	width:100%;
+}
+
+textarea#guest_note{
+	width:100%;
+}
+
+#guest_show{
+	text-align: center;
+}
+
+h1.name{
+	color:#5cb2cf;
+}
+
+#guest_show p{
+	color:#5cb2cf;
+}
+
+#guest_new{
+	text-align:center;
+}
+
+form#new_guest{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}

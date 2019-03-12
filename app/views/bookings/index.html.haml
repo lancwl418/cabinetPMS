@@ -1,0 +1,15 @@
+
+.wrapper_width_padding
+#booking.clearfix
+	- unless @bookings.blank?
+		- @bookings.each do |booking|
+			%a{ href: (url_for [booking])}
+				.booking
+					%p.bookingtitle= booking.doc.title
+					%p.bookingguest= booking.guest.name
+	- else
+		%h2 Create a new booking! 
+		%p Start Creating booking
+		%button= link_to "Create booking", new_booking_path	
+
+

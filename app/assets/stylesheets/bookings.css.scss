@@ -1,0 +1,83 @@
+// Place all the styles related to the Bookings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+#booking_new{
+	width:30%;
+	margin-left:auto;
+	margin-right:auto;
+}
+
+#booking_new .doc{
+	color:white;
+}
+
+#booking_new .guest{
+	color:white;
+}
+
+#booking_new .doc p.title{
+	font-size: 20px;
+}
+
+#booking_new .doc p.id{
+	font-size:20px;
+}
+
+#booking_new .guest p.title{
+	font-size: 20px;
+}
+
+#booking_new .guest p.id{
+	font-size:20px;
+}
+
+p.note{
+	text-align: center;
+	font-weight: bold;
+	font-size:30px;
+}
+
+form#new_booking{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form#new_booking input{
+	width: 100%
+}
+
+
+.booking{
+	text-align: center;
+	border: 1px solid #6abbd4;
+    border-radius: 63px;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top:20px;
+}
+
+.booking p{
+	color:#6abbd4;
+	font-size: 20px;
+}
+
+h1{
+	text-align: center;
+}
+
+form.edit_booking{
+	width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+form.edit_booking input{
+	width: 100%;
+}
+
+#booking{
+	text-align: center;
+}

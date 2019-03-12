@@ -1,0 +1,14 @@
+.wrapper_width_padding
+#guest_show
+  %h1.name= @guest.name
+  %p= @guest.gender
+  %p= @guest.note
+
+.buttons
+  = link_to "All Guests", guests_path
+  = link_to "Edit Guest", edit_guest_path(@guest)
+  = link_to "Delete Guest", guest_path(@guest), method: :delete, data: { confirm: "Are you sure?" }
+  
+
+
+

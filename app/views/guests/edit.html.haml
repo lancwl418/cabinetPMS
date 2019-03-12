@@ -1,0 +1,6 @@
+.wrapper_width_padding
+  #guest_edit
+    %h1.edit="Edit"
+    %h1.name= @guest.name
+  = render 'form'
+  = link_to "Cancel", guest_path, :id => "cancel"
