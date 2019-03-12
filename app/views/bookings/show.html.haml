@@ -1,9 +1,15 @@
-%h1= @booking.doc.title
-%h1= @booking.guest.name
-%p= @booking.checkin
-%p= @booking.checkout
+.wrapper_width_padding
+#booking.clearfix
+  %h1= @booking.doc.title
+  %h1= @booking.guest.name
 
+  %h2 Check in 
+  %p= @booking.checkin
 
-= link_to "All Bookings", bookings_path
-= link_to "Edit Booking", edit_booking_path(@booking)
-= link_to "Delete it", booking_path(@booking), method: :delete, data: { confirm: "Are you sure?" }
+  %h2 Check out
+  %p= @booking.checkout
+
+.buttons
+  = link_to "All Bookings", bookings_path
+  = link_to "Edit Booking", edit_booking_path(@booking)
+  = link_to "Delete it", booking_path(@booking), method: :delete, data: { confirm: "Are you sure?" }
